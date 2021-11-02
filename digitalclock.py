@@ -21,6 +21,12 @@ clock=tk.Label(root,font=('arial',20,'bold'), bg='green')
 #placement of the clock
 clock.pack(fill='both',expand=1)
 
+btn_1 = Button(root, text='Refresh', command=tick())
+
+
+
+#put btns on the screeen
+btn_1.pack()
 
 tick()#call the tick func
 root.mainloop()
