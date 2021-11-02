@@ -1,3 +1,5 @@
+#makes a shape using turtle module
+
 #import different modules 
 from turtle import *
 from math import sin, cos, pi
