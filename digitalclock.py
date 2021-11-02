@@ -5,7 +5,7 @@ import time
 import tkinter as tk
 
 
-def tick(time=""):
+def tick(time1=""):
     #get the current time
     time2 = time.strftime('%h:%m:%s') #format for the time
     if time2 != time1:
