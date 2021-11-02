@@ -7,7 +7,7 @@ import tkinter as tk
 
 def tick(time1=""):
     #get the current time
-    time2 = time.strftime('%h:%m:%s') #format for the time
+    time2 = time.strftime('%H:%M:%S') #format for the time
     if time2 != time1:
         time1 = time2
         clock.config(text=time2)
