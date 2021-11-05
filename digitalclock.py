@@ -19,14 +19,14 @@ root=tk.Tk()
 clock=tk.Label(root,font=('arial',20,'bold'), bg='green')
 
 
-btn_1 = Button(root, text='Refresh', command=tick)
-
+#btn_1 = Button(root, text='Refresh', command=tick)
+btn_2 = Button(root, text="Exit", command=root.destroy)
 
 
 #placement of the clock
 clock.pack(fill='both',expand=1)
 #put btns on the screeen
-btn_1.pack()
-
+#btn_1.pack()
+btn_2.pack()
 tick()#call the tick func
 root.mainloop()
