@@ -7,5 +7,5 @@ each python file is a seperate python application from a magazine
 
 <h4>Resources used:</h4>
 <ul>
-  <li></li>
+  <li>coding tips, tricks and fixes</li>
   </ul>
