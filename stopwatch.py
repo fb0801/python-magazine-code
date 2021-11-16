@@ -43,7 +43,7 @@ class StopWatch(tkinter.Frame):
 
     def __update(self):
         now=time.Clock()
-        diff= now - self. __start
+        diff= now - self.__start
         self.__start = now
         self.__total += diff
         self.__time.set('{:.6f}'.format(self.__total))
