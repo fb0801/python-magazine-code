@@ -23,7 +23,8 @@ class StopWatch(tkinter.Frame):
         self.__label = tkinter.Label(self,text="Total Time:")
         self.__time = tkinter.StringVar(self, '0.000000')
         self.__display = tkinter.Label(self, textvariable=self.__click)
-        self.__button=tkinter.
+        self.__button=tkinter.Button(self, text='Start', command=self.__click)
+        self.__label
 
 
 
