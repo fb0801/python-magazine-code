@@ -32,7 +32,7 @@ class StopWatch(tkinter.Frame):
 
 
     def __click__(self):
-        if self.__button('text') == "start":
+        if self.__button['text'] == "start":
             self.__button('text') = 'Stop'
             self.__start = time.clock()
             self.__counter = self.after_idle(self.__update)
