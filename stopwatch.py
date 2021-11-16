@@ -19,7 +19,17 @@ class StopWatch(tkinter.Frame):
 
 
 
-    def _ _click__(self):
+    def __click__(self):
 
 
-    def _ _update(self):
+    def __update(self):
+        now=time.Clock()
+        diff= now - self. __start
+        self.__start = now
+        self.__total += diff
+        self.__time.set('{:.6f}'.format(self.__total))
+        self.__counter = self.after_idle(self.__update)
+
+
+if __name__ =='__main__':
+    StopWatch.main()
