@@ -18,7 +18,12 @@ class StopWatch(tkinter.Frame):
         padding = dict(padx=kw.pop('padx',5), pady=kw.pop('pady',5))
         super().__init__(master,cnf, **kw)
         self.grid_columnconfigure(1,weight=1)
-        self.grid
+        self.grid_rowconfigure(1, weight=1)
+        self.__total = 0
+        self.__label = tkinter.Label(self,text="Total Time:")
+        self.__time = tkinter.StringVar(self, '0.000000')
+        self.__display = tkinter.Label(self, textvariable=self.__click)
+        self.__button=tkinter.
 
 
 
