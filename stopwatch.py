@@ -14,7 +14,11 @@ class StopWatch(tkinter.Frame):
         root.resizeable(true, false) #change window size
         root.grid
 
-    def __init__(self, master=none, cnf=())
+    def __init__(self, master=none, cnf={}, **kw):
+        padding = dict(padx=kw.pop('padx',5), pady=kw.pop('pady',5))
+        super().__init__(master,cnf, **kw)
+        self.grid_columnconfigure(1,weight=1)
+        self.grid
 
 
 
