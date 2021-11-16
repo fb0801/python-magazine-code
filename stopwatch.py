@@ -24,7 +24,9 @@ class StopWatch(tkinter.Frame):
             self.__button('text') = 'Stop'
             self.__start = time.clock()
             self.__counter = self.after_idle(self.__update)
-        
+        else:
+            self.__button['text'] = 'Start'
+            self.after_cancel(self.__counter)
 
 
     def __update(self):
