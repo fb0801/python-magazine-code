@@ -24,7 +24,9 @@ class StopWatch(tkinter.Frame):
         self.__time = tkinter.StringVar(self, '0.000000')
         self.__display = tkinter.Label(self, textvariable=self.__click)
         self.__button=tkinter.Button(self, text='Start', command=self.__click)
-        self.__label
+        self.__label.grid(row=0, column=0, sticky=tkinter.E, **padding)
+        self.__display.grid(row=0, column=1, sticky= tkinter.EW, **padding)
+        self.__button.grid(row=1, column=0, columnspan=2, sticky=tkinter.NSEW, **padding)
 
 
 
