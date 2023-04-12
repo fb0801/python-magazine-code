@@ -3,7 +3,7 @@
 #imprt our modules
 import time
 import tkinter as tk
-
+from tkinter import *
 
 def tick(time1=""):
     #get the current time
